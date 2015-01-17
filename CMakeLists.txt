@@ -52,6 +52,5 @@ fips_begin_lib(simpleai)
         ltable.cpp ltable.h ltablib.cpp ltm.cpp ltm.h luac.cpp luaconf.h
         lua.cpp lua.h lua.hpp lualib.h lundump.cpp lundump.h lvm.cpp
         lvm.h lzio.cpp lzio.h)
-    fips_end_lib()
-endif()
+fips_end_lib()
 
