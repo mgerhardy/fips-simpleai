@@ -1,3 +1,5 @@
+set(FIPS_EXCEPTIONS ON)
+
 fips_begin_lib(simpleai)
     include_directories(. simpleai/src/ai simpleai/src/libs/lua)
 
