@@ -1,0 +1,3 @@
+[submodule "simpleai"]
+	path = simpleai
+	url = https://github.com/mgerhardy/simpleai.git

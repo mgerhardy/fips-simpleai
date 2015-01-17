@@ -1,0 +1,9 @@
+#
+# fips-simpleai
+#
+---
+exports:
+    header-dirs: [ simpleai/src/ai ]
+    modules :
+        simpleai: .
+
