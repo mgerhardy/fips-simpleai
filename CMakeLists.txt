@@ -1,5 +1,3 @@
-set(FIPS_EXCEPTIONS ON)
-
 fips_begin_lib(simpleai)
     include_directories(. simpleai/src/ai simpleai/src/libs/lua)
 
@@ -36,7 +34,7 @@ fips_begin_lib(simpleai)
         ICondition.h IsCloseToGroup.cpp IsCloseToGroup.h IsGroupLeader.cpp IsGroupLeader.h
         IsInGroup.cpp IsInGroup.h Not.cpp Not.h Or.cpp Or.h True.cpp True.h)
     fips_dir(simpleai/src/ai/common)
-    fips_files(AIException.h Enum.h IFactoryRegistry.h IParser.h IPrintable.h
+    fips_files(Enum.h IFactoryRegistry.h IParser.h IPrintable.h
         Math.h MemoryAllocator.h MoveVector.h NonCopyable.h Random.h String.h Thread.h
         Types.h Vector3f.cpp Vector3f.h)
     fips_dir(simpleai/src/ai/movement)
