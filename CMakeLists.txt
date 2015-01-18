@@ -1,6 +1,10 @@
 fips_begin_lib(simpleai)
     include_directories(. simpleai/src/ai simpleai/src/libs/lua)
-
+    if (NOT FIPS_EXCEPTIONS)
+        add_definitions(-DLUA_USE_LONGJMP -DAI_EXCEPTIONS=0)
+    else
+        add_definitions(-DAI_EXCEPTIONS=1)
+    endif()
     fips_dir(simpleai/src/ai)
     fips_files(AI.cpp AI.h AIRegistry.cpp AIRegistry.h IAIFactory.h ICharacter.h SimpleAI.h)
     fips_dir(simpleai/src/ai/group)
@@ -53,4 +57,3 @@ fips_begin_lib(simpleai)
         lua.cpp lua.h lua.hpp lualib.h lundump.cpp lundump.h lvm.cpp
         lvm.h lzio.cpp lzio.h)
 fips_end_lib()
-
