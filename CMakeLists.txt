@@ -2,7 +2,7 @@ fips_begin_lib(simpleai)
     include_directories(. simpleai/src/ai simpleai/src/libs/lua)
     if (NOT FIPS_EXCEPTIONS)
         add_definitions(-DLUA_USE_LONGJMP -DAI_EXCEPTIONS=0)
-    else
+    else()
         add_definitions(-DAI_EXCEPTIONS=1)
     endif()
     fips_dir(simpleai/src/ai)
