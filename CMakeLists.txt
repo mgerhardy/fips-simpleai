@@ -1,3 +1,6 @@
+include(CheckFunctionExists)
+include(CheckLibraryExists)
+
 fips_begin_lib(simpleai)
     include_directories(. simpleai/src/ai simpleai/src/libs/lua)
     if (NOT FIPS_EXCEPTIONS)
@@ -174,4 +177,14 @@ fips_begin_lib(simpleai)
         lvm.c lvm.h
         lzio.c lzio.h
     )
+    if (FIPS_LINUX)
+        check_function_exists(__atomic_fetch_add_4 HAVE___ATOMIC_FETCH_ADD_4)
+        if (NOT HAVE___ATOMIC_FETCH_ADD_4)
+            check_library_exists(atomic __atomic_fetch_add_4 "" HAVE_LIBATOMIC)
+            set(HAVE_LIBATOMIC False)
+            if (HAVE_LIBATOMIC)
+                fips_deps(atomic)
+            endif()
+        endif()
+    endif()
 fips_end_lib()
