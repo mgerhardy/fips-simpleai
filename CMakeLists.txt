@@ -74,10 +74,10 @@ fips_begin_lib(simpleai)
     fips_files(
         ITreeLoader.h
     )
-    fips_dir(simpleai/src/ai/tree/loaders/xml)
-    fips_files(
-        XMLTreeLoader.cpp XMLTreeLoader.h
-    )
+    #fips_dir(simpleai/src/ai/tree/loaders/xml)
+    #fips_files(
+    #    XMLTreeLoader.cpp XMLTreeLoader.h
+    #)
     fips_dir(simpleai/src/ai/tree/loaders/lua)
     fips_files(
         LUACondition.h
