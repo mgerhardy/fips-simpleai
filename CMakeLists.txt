@@ -51,6 +51,7 @@ fips_begin_lib(simpleai)
         SelectGroupLeader.cpp SelectGroupLeader.h
         SelectGroupMembers.cpp SelectGroupMembers.h
         SelectHighestAggro.cpp SelectHighestAggro.h
+        SelectZone.cpp SelectZone.h
     )
     fips_dir(simpleai/src/ai/tree)
     fips_files(
