@@ -70,11 +70,6 @@ fips_begin_lib(simpleai)
         TreeNode.cpp TreeNode.h
         TreeNodeParser.cpp TreeNodeParser.h
     )
-    fips_dir(simpleai/src/ai/tree/group)
-    fips_files(
-        FleeGroup.cpp FleeGroup.h
-        FollowGroup.cpp FollowGroup.h
-    )
     fips_dir(simpleai/src/ai/tree/loaders)
     fips_files(
         ITreeLoader.h
