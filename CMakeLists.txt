@@ -22,6 +22,9 @@ fips_begin_lib(simpleai)
     )
     fips_dir(simpleai/src/ai/server)
     fips_files(
+        AIUpdateNodeMessage.h
+        AIAddNodeMessage.h
+        AIDeleteNodeMessage.h
         AIChangeMessage.h
         AICharacterDetailsMessage.h
         AICharacterStaticMessage.h
@@ -42,6 +45,9 @@ fips_begin_lib(simpleai)
         SelectHandler.cpp SelectHandler.h
         Server.cpp Server.h
         StepHandler.cpp StepHandler.h
+        UpdateNodeHandler.cpp UpdateNodeHandler.h
+        DeleteNodeHandler.cpp DeleteNodeHandler.h
+        AddNodeHandler.cpp AddNodeHandler.h
     )
     fips_dir(simpleai/src/ai/zone)
     fips_files(
@@ -63,7 +69,7 @@ fips_begin_lib(simpleai)
         ITask.cpp ITask.h
         ITimedNode.cpp ITimedNode.h
         Parallel.cpp Parallel.h
-        Print.h
+        Print.cpp Print.h
         PrioritySelector.cpp PrioritySelector.h
         ProbabilitySelector.cpp ProbabilitySelector.h
         RandomSelector.cpp RandomSelector.h
