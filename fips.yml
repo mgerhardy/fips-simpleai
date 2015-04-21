@@ -2,6 +2,10 @@
 # fips-simpleai
 #
 ---
+imports:
+    fips-lua:
+        git: https://github.com/mgerhardy/fips-lua.git
+
 exports:
     header-dirs: [ simpleai/src/ai ]
     modules :
