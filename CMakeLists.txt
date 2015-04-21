@@ -64,6 +64,8 @@ fips_begin_lib(simpleai)
     )
     fips_dir(simpleai/src/ai/tree)
     fips_files(
+        Fail.cpp Fail.h
+        Limit.cpp Limit.h
         Idle.cpp Idle.h
         Invert.cpp Invert.h
         ITask.cpp ITask.h
