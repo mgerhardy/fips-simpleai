@@ -65,11 +65,11 @@ fips_begin_lib(simpleai)
     fips_dir(simpleai/src/ai/tree)
     fips_files(
         Fail.cpp Fail.h
-        Limit.cpp Limit.h
         Idle.cpp Idle.h
         Invert.cpp Invert.h
         ITask.cpp ITask.h
         ITimedNode.cpp ITimedNode.h
+        Limit.cpp Limit.h
         Parallel.cpp Parallel.h
         Print.cpp Print.h
         PrioritySelector.cpp PrioritySelector.h
@@ -127,6 +127,8 @@ fips_begin_lib(simpleai)
         Random.h
         String.h
         Thread.h
+        ThreadPool.h
+        ThreadScheduler.h
         Types.h
         Vector3f.cpp Vector3f.h
     )
