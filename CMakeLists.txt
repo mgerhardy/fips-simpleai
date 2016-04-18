@@ -130,7 +130,6 @@ fips_begin_lib(simpleai)
         ThreadPool.h
         ThreadScheduler.h
         Types.h
-        Vector3f.cpp Vector3f.h
     )
     fips_dir(simpleai/src/ai/movement)
     fips_files(
